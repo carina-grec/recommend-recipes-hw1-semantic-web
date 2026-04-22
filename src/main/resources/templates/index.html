@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Semantic Web Recipes</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes/add}">Add Recipe</a>
+    <a th:href="@{/users/add}">Add User</a>
+    <a th:href="@{/recommend/skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend/skill-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes/filter}">Filter by Cuisine</a>
+    <a th:href="@{/recipes/xsl}">Display with XSL</a>
+    <a th:href="@{/recipes/scrape}">Scrape BBC Recipes</a>
+</div>
+
+<div class="container">
+    <h1>Recipe Recommendation App</h1>
+
+    <div th:if="${success}" class="success-message">
+        <p th:text="${success}"></p>
+    </div>
+
+    <div th:if="${error}" class="error-message">
+        <p th:text="${error}"></p>
+    </div>
+
+    <div class="card" th:if="${firstUser != null}">
+        <h2>First User</h2>
+        <p><strong>ID:</strong> <span th:text="${firstUser.id}"></span></p>
+        <p><strong>Name:</strong> <span th:text="${firstUser.name}"></span></p>
+        <p><strong>Surname:</strong> <span th:text="${firstUser.surname}"></span></p>
+        <p><strong>Cooking Skill:</strong> <span th:text="${firstUser.cookingSkillLevel}"></span></p>
+        <p><strong>Preferred Cuisine:</strong> <span th:text="${firstUser.preferredCuisineType}"></span></p>
+    </div>
+
+    <h2>All Users</h2>
+    <table th:if="${users != null and !users.isEmpty()}">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Cooking Skill</th>
+            <th>Preferred Cuisine</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.surname}"></td>
+            <td th:text="${user.cookingSkillLevel}"></td>
+            <td th:text="${user.preferredCuisineType}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div th:if="${users == null or users.isEmpty()}" class="card">
+        <p>No users found.</p>
+    </div>
+
+    <h2>All Recipes</h2>
+    <table th:if="${recipes != null and !recipes.isEmpty()}">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Cuisine Types</th>
+            <th>Difficulty</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="recipe : ${recipes}">
+            <td th:text="${recipe.id}"></td>
+            <td>
+                <a th:href="@{'/recipes/' + ${recipe.id}}" th:text="${recipe.title}"></a>
+            </td>
+            <td>
+                <span th:each="cuisine, iterStat : ${recipe.cuisineTypes}">
+                    <span th:text="${cuisine}"></span><span th:if="${!iterStat.last}">, </span>
+                </span>
+            </td>
+            <td th:text="${recipe.difficulty}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div th:if="${recipes == null or recipes.isEmpty()}" class="card">
+        <p>No recipes found.</p>
+    </div>
+</div>
+
+</body>
+</html>
