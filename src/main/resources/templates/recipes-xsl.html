@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Recipes via XSL</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes/add}">Add Recipe</a>
+    <a th:href="@{/users/add}">Add User</a>
+    <a th:href="@{/recommend/skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend/skill-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes/filter}">Filter by Cuisine</a>
+    <a th:href="@{/recipes/xsl}">Display with XSL</a>
+    <a th:href="@{/recipes/scrape}">Scrape BBC Recipes</a>
+</div>
+
+<div class="container">
+    <h1>Recipes Displayed with XSL</h1>
+
+    <form th:action="@{/recipes/xsl}" method="get">
+        <div>
+            <label for="userId">Select user:</label>
+            <select id="userId" name="userId">
+                <option value="">-- First User --</option>
+                <option th:each="user : ${users}"
+                        th:value="${user.id}"
+                        th:text="${user.fullName + ' (' + user.cookingSkillLevel + ')'}"
+                        th:selected="${user.id == selectedUserId}">
+                </option>
+            </select>
+        </div>
+
+        <button type="submit">Display with XSL</button>
+    </form>
+
+    <div class="card" th:if="${selectedUser != null}">
+        <p>
+            Current selected user:
+            <strong th:text="${selectedUser.fullName}"></strong>
+        </p>
+        <p>
+            Skill:
+            <strong th:text="${selectedUser.cookingSkillLevel}"></strong>
+        </p>
+    </div>
+
+    <div th:utext="${transformedHtml}"></div>
+</div>
+
+</body>
+</html>

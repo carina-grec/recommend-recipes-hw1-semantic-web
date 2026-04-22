@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Recipe</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes/add}">Add Recipe</a>
+    <a th:href="@{/users/add}">Add User</a>
+    <a th:href="@{/recommend/skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend/skill-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes/filter}">Filter by Cuisine</a>
+    <a th:href="@{/recipes/xsl}">Display with XSL</a>
+    <a th:href="@{/recipes/scrape}">Scrape BBC Recipes</a>
+</div>
+
+<div class="container">
+    <h1>Add Recipe</h1>
+
+    <div th:if="${error}" class="error-message">
+        <p th:text="${error}"></p>
+    </div>
+
+    <form th:action="@{/recipes/add}" th:object="${recipeForm}" method="post">
+        <div>
+            <label for="title">Title:</label>
+            <input id="title" type="text" th:field="*{title}" required>
+        </div>
+
+        <div>
+            <label for="cuisine1">Cuisine Type 1:</label>
+            <select id="cuisine1" th:field="*{cuisine1}">
+                <option value="">-- Select --</option>
+                <option th:each="c : ${cuisineOptions}" th:value="${c}" th:text="${c}"></option>
+            </select>
+        </div>
+
+        <div>
+            <label for="cuisine2">Cuisine Type 2:</label>
+            <select id="cuisine2" th:field="*{cuisine2}">
+                <option value="">-- Select --</option>
+                <option th:each="c : ${cuisineOptions}" th:value="${c}" th:text="${c}"></option>
+            </select>
+        </div>
+
+        <div>
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty" th:field="*{difficulty}">
+                <option value="">-- Select --</option>
+                <option th:each="d : ${difficultyOptions}" th:value="${d}" th:text="${d}"></option>
+            </select>
+        </div>
+
+        <button type="submit">Save Recipe</button>
+    </form>
+</div>
+
+</body>
+</html>

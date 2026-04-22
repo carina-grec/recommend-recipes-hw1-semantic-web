@@ -1,0 +1,37 @@
+Semantic Web Homework 1 – Recipe Recommendation System
+
+Team: Dan Maria-Andrada (frontend + backend), Grec Carina-Gabriela (XML, XSD, XPath + backend)
+Github link: https://github.com/carina-grec/recommend-recipes-hw1-semantic-web.git
+
+Description:
+This project is a Java web application built with Spring Boot that recommends recipes to users based on their cooking skill level and preferred cuisine type.
+
+Technologies Used:
+- Java (Spring Boot)
+- XML (data storage)
+- XML Schema (XSD) for validation
+- XPath for querying XML data
+- XSL for transforming XML into HTML
+- Thymeleaf (UI)
+
+Main Features:
+1. Recipes are stored in an XML file and validated using XSD.
+2. Recipes can be scraped from BBC Good Food (titles only).
+3. Users can add new recipes and users via forms.
+4. Recipes are recommended based on:
+   - cooking skill level
+   - cooking skill level + preferred cuisine
+5. Recipes can be filtered by cuisine type.
+6. Recipe details can be viewed individually.
+7. Recipes are also displayed using XSL transformation with:
+   - yellow highlight for matching skill
+   - green for non-matching recipes
+8. User selection is available for recommendations (UI improvement).
+
+How to Run:
+1. Open the project in an IDE - IntelliJ
+2. Run the main class: RecommendRecipes.java
+3. Open browser at: http://localhost:8080
+
+
+
