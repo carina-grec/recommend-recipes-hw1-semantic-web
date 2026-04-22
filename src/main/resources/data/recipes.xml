@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<recipes>
+    <recipe id="1">
+        <title>Foolproof focaccia</title>
+        <cuisineTypes>
+            <cuisine>Mexican</cuisine>
+            <cuisine>American</cuisine>
+        </cuisineTypes>
+        <difficulty>Beginner</difficulty>
+    </recipe>
+    <recipe id="2">
+        <title>Quick pastas</title>
+        <cuisineTypes>
+            <cuisine>Indian</cuisine>
+            <cuisine>Asian</cuisine>
+        </cuisineTypes>
+        <difficulty>Intermediate</difficulty>
+    </recipe>
+    <recipe id="3">
+        <title>Spring baking</title>
+        <cuisineTypes>
+            <cuisine>Asian</cuisine>
+            <cuisine>French</cuisine>
+        </cuisineTypes>
+        <difficulty>Intermediate</difficulty>
+    </recipe>
+    <recipe id="4">
+        <title>Quick and easy</title>
+        <cuisineTypes>
+            <cuisine>Asian</cuisine>
+            <cuisine>Mexican</cuisine>
+        </cuisineTypes>
+        <difficulty>Advanced</difficulty>
+    </recipe>
+    <recipe id="5">
+        <title>Everyday recipes</title>
+        <cuisineTypes>
+            <cuisine>Mexican</cuisine>
+            <cuisine>Indian</cuisine>
+        </cuisineTypes>
+        <difficulty>Advanced</difficulty>
+    </recipe>
+    <recipe id="6">
+        <title>Family recipes</title>
+        <cuisineTypes>
+            <cuisine>Mexican</cuisine>
+            <cuisine>American</cuisine>
+        </cuisineTypes>
+        <difficulty>Advanced</difficulty>
+    </recipe>
+    <recipe id="7">
+        <title>One-pots</title>
+        <cuisineTypes>
+            <cuisine>French</cuisine>
+            <cuisine>Indian</cuisine>
+        </cuisineTypes>
+        <difficulty>Advanced</difficulty>
+    </recipe>
+    <recipe id="8">
+        <title>Slow cooker recipes</title>
+        <cuisineTypes>
+            <cuisine>French</cuisine>
+            <cuisine>Italian</cuisine>
+        </cuisineTypes>
+        <difficulty>Intermediate</difficulty>
+    </recipe>
+    <recipe id="9">
+        <title>Traybakes</title>
+        <cuisineTypes>
+            <cuisine>Mexican</cuisine>
+            <cuisine>Italian</cuisine>
+        </cuisineTypes>
+        <difficulty>Beginner</difficulty>
+    </recipe>
+    <recipe id="10">
+        <title>Air fryer recipes</title>
+        <cuisineTypes>
+            <cuisine>European</cuisine>
+            <cuisine>Asian</cuisine>
+        </cuisineTypes>
+        <difficulty>Beginner</difficulty>
+    </recipe>
+    <recipe id="11">
+        <title>Batch cooking</title>
+        <cuisineTypes>
+            <cuisine>French</cuisine>
+            <cuisine>Mediterranean</cuisine>
+        </cuisineTypes>
+        <difficulty>Beginner</difficulty>
+    </recipe>
+    <recipe id="12">
+        <title>Occasion recipes</title>
+        <cuisineTypes>
+            <cuisine>French</cuisine>
+            <cuisine>Mediterranean</cuisine>
+        </cuisineTypes>
+        <difficulty>Beginner</difficulty>
+    </recipe>
+    <recipe id="13">
+        <title>Meal type</title>
+        <cuisineTypes>
+            <cuisine>Italian</cuisine>
+            <cuisine>Asian</cuisine>
+        </cuisineTypes>
+        <difficulty>Advanced</difficulty>
+    </recipe>
+    <recipe id="14">
+        <title>Breakfast</title>
+        <cuisineTypes>
+            <cuisine>French</cuisine>
+            <cuisine>Italian</cuisine>
+        </cuisineTypes>
+        <difficulty>Intermediate</difficulty>
+    </recipe>
+    <recipe id="15">
+        <title>Lunch</title>
+        <cuisineTypes>
+            <cuisine>French</cuisine>
+            <cuisine>Indian</cuisine>
+        </cuisineTypes>
+        <difficulty>Advanced</difficulty>
+    </recipe>
+    <recipe id="16">
+        <title>Dinner</title>
+        <cuisineTypes>
+            <cuisine>Mexican</cuisine>
+            <cuisine>European</cuisine>
+        </cuisineTypes>
+        <difficulty>Advanced</difficulty>
+    </recipe>
+    <recipe id="17">
+        <title>Browse all meal types</title>
+        <cuisineTypes>
+            <cuisine>Indian</cuisine>
+            <cuisine>American</cuisine>
+        </cuisineTypes>
+        <difficulty>Advanced</difficulty>
+    </recipe>
+    <recipe id="18">
+        <title>Diet type</title>
+        <cuisineTypes>
+            <cuisine>Asian</cuisine>
+            <cuisine>French</cuisine>
+        </cuisineTypes>
+        <difficulty>Intermediate</difficulty>
+    </recipe>
+    <recipe id="19">
+        <title>Vegan</title>
+        <cuisineTypes>
+            <cuisine>Asian</cuisine>
+            <cuisine>French</cuisine>
+        </cuisineTypes>
+        <difficulty>Intermediate</difficulty>
+    </recipe>
+    <recipe id="20">
+        <title>Browse all diet types</title>
+        <cuisineTypes>
+            <cuisine>Indian</cuisine>
+            <cuisine>Mexican</cuisine>
+        </cuisineTypes>
+        <difficulty>Beginner</difficulty>
+    </recipe>
+</recipes>
