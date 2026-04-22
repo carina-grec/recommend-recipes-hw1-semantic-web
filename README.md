@@ -5,7 +5,7 @@ This project is a Java Spring Boot web application that recommends recipes to us
 
 The application demonstrates the use of **XML technologies** including XML, XSD, XPath, and XSL as required in a Semantic Web assignment.
 
----
+
 
 ## 🛠️ Technologies Used
 - Java (Spring Boot)
@@ -15,7 +15,7 @@ The application demonstrates the use of **XML technologies** including XML, XSD,
 - XSLT for XML transformation
 - Thymeleaf (UI templates)
 
----
+
 
 ## ⚙️ Features
 
@@ -48,7 +48,7 @@ The application demonstrates the use of **XML technologies** including XML, XSD,
 - Navigation bar for easy access
 - Clean and simple interface
 
----
+
 
 ## ▶️ How to Run
 
