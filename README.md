@@ -40,8 +40,8 @@ The application demonstrates the use of **XML technologies** including XML, XSD,
 ### 🎨 XSL Transformation
 - Recipes are displayed using XSLT
 - Highlighting:
-  - 🟡 Yellow = matches user skill
-  - 🟢 Green = does not match
+  - Yellow = matches user skill
+  - Green = does not match
 
 ### 👤 UI Improvements
 - Users can be selected for recommendations
@@ -59,6 +59,9 @@ The application demonstrates the use of **XML technologies** including XML, XSD,
 
 ## 📁 Project structure
 
+## Project Structure
+
+```text
 src/main/java/com/example/
 ├── controller/
 ├── model/
@@ -73,5 +76,7 @@ src/main/resources/
 │   └── users.xsd
 ├── templates/
 └── xsl/
+```
 
-## Authors: Dan Maria-Andrada, Grec Carina-Gabriela
+## Authors
+Dan Maria-Andrada, Grec Carina-Gabriela
